@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Malware Detection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(to right, #2c3e50, #4a6984);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav a:hover {
+            color: #a3bffa;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .main-content {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 1s ease-in-out;
+            display: flex;
+            gap: 2rem;
+        }
+        .main-content h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .image-container {
+            flex: 1;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .text-content {
+            flex: 2;
+        }
+        .text-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: linear-gradient(to right, #2c3e50, #4a6984);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            text-align: center;
+            transition: background 0.3s ease, transform 0.3s ease;
+            margin: 1rem 0;
+            display: block;
+            width: fit-content;
+        }
+        .btn:hover {
+            background: linear-gradient(to right, #34495e, #5a7a94);
+            transform: translateY(-2px);
+        }
+        .footer {
+            background: linear-gradient(to right, #2c3e50, #4a6984);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="{{ url_for('index')}}">Home</a>
+            <a href="{{ url_for('about')}}">About</a>
+            <a href="{{ url_for('login')}}">Login</a>
+            <a href="{{ url_for('register')}}">Register</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="image-container" style="padding-top: 50px;">
+                <img src="static\images\image1.jpg" alt="Malware Detection AI">
+            </div>
+            <div class="text-content">
+                <h1>About Our AI-Powered Malware Detection System</h1>
+                <p>Our system leverages advanced machine learning techniques, utilizing Decision Tree and XGBoost algorithms to detect malware with high accuracy. Designed to assist cybersecurity professionals, it provides transparent insights into the detection process, ensuring trust and reliability.</p>
+                <p>Learn about our mission to enhance cybersecurity through cutting-edge AI technology, our team of experts, and the innovative methodologies that power our system. Our approach builds upon previous methods like Random Forest Classifier, Feature Selection, and Extra Tree Classifier, offering improved performance and interpretability.</p>
+                <a href="https://www.kaggle.com/competitions/malware-detection/data?select=Kaggle-data.csv" class="btn">Access Our Dataset</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

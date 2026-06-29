@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware Detection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(to right, #2c3e50, #4a6984);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav a:hover {
+            color: #a3bffa;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .main-content {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .main-content h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .main-content h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .main-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        .main-content ul {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+            padding-left: 2rem;
+        }
+        .main-content ul li {
+            margin-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: linear-gradient(to right, #2c3e50, #4a6984);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            text-align: center;
+            transition: background 0.3s ease, transform 0.3s ease;
+            margin: 1rem auto;
+            display: block;
+            width: fit-content;
+        }
+        .btn:hover {
+            background: linear-gradient(to right, #34495e, #5a7a94);
+            transform: translateY(-2px);
+        }
+        .footer {
+            background: linear-gradient(to right, #2c3e50, #4a6984);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="{{ url_for('index')}}">Home</a>
+            <a href="{{ url_for('about')}}">About</a>
+            <a href="{{ url_for('login')}}">Login</a>
+            <a href="{{ url_for('register')}}">Register</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h1>An Efficient Malware Detection Approach Based
+                on Machine Learning Feature Influence
+                Techniques for Resource-Constrained Devices</h1>
+            <h2>Welcome to Our AI-Powered Malware Detection</h2>
+            <p>Our project leverages advanced machine learning techniques to detect malware efficiently, optimized for resource-constrained devices. Below are the key details of our approach:</p>
+            <h3>Algorithms</h3>
+            <ul>
+                <li><strong>Random Forest Classifier:</strong> Utilizes ensemble learning to combine multiple decision trees for robust malware detection.</li>
+                <li><strong>Extra Trees Classifier:</strong> An extension of Random Forest with additional randomization for enhanced accuracy and efficiency.</li>
+                <li><strong>Decision Tree:</strong> A simple yet effective model that creates a tree-like structure to make decisions based on feature splits.</li>
+                <li><strong>XGBoost:</strong> An advanced gradient boosting algorithm that optimizes performance through parallel processing and regularization.</li>
+            </ul>
+            <p>Our proposed methods aim to enhance detection accuracy while maintaining efficiency, making them suitable for deployment on resource-constrained devices.</p>
+        </div>
+    </div>
+</body>
+</html>
